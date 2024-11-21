@@ -54,9 +54,9 @@ public class HelloWorldModel {
                 .map(pm -> pm.getContainingPage(currentResource))
                 .map(Page::getPath).orElse("");
 
-        message = "Hello World!\n"
-            + "Resource type is: " + resourceType + "\n"
-            + "Current page is:  " + currentPagePath + "\n";
+        message = "Hello World here!\n"
+            + "Resource type is Nikki: " + resourceType + "\n"
+            + "Current page is Nikki:  " + currentPagePath + "\n";
     }
 
     public String getMessage() {

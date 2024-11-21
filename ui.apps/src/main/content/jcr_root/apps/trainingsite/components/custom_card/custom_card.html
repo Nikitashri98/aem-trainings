@@ -1,0 +1,56 @@
+<div class="articlelist">
+
+
+
+    <sly data-sly-use.clientLib="/libs/granite/sightly/templates/clientlib.html"
+         data-sly-call="${clientlib.all @ categories='trainingsite.card'}" />
+
+
+
+
+    </sly>
+
+
+
+
+    <sly data-sly-use.model="com.trainingsite.core.models.CardModel">
+
+
+
+
+        <sly data-sly-list.articleList="${model.articleListDataBeanList}">
+
+
+
+
+
+
+            <div class="cards">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDgU-uGLjc8B0BTeVO0NvI4qAqZNp2qCU7gg&s" alt="Alps" style="width:50%">
+                  <div class="cards-container">
+
+                      <h2> ${articleList.title} </h2>
+
+                    <h4> ${articleList.path} </h4>
+
+                    <h4> ${articleList.description} </h4>
+
+                </div>
+
+
+            </div>
+
+
+
+
+
+
+
+
+
+        </sly>
+
+    </sly>
+
+
+</div>
